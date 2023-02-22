@@ -1,5 +1,5 @@
-const StatusMessage = ({winner, isONext, squares}) => {
-
+const StatusMessage = ({winner, gamingBoard}) => {
+    const {squares, isONext} = gamingBoard;
     const noMovesLeft = squares.every((squareValue) => squareValue !== null);
     const currentPlayer = isONext ? 'O' : 'X';
     //const statusMessage = winner ? `Winner is ${winner}` : `Current player is ${currentPlayer}`;
@@ -30,7 +30,7 @@ const StatusMessage = ({winner, isONext, squares}) => {
 
         return null;
     }
-    return <h2 className="status-message">{renderStatusMessage()}</h2>
+    return <h2 className="status-message" >{renderStatusMessage()}</h2>
 }
 
 export default StatusMessage;
