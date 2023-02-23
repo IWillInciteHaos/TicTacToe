@@ -1,4 +1,3 @@
-
 import Square from "./Square";
 
 const Board = ( {squares, handleSquareClick, winningSquares} ) => {

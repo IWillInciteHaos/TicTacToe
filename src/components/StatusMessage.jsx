@@ -9,7 +9,7 @@ const StatusMessage = ({winner, gamingBoard}) => {
         {
             return <>
                 Winner is {' '} 
-                <span className={isONext ? 'text-orange' : 'text-green'}>
+                <span className={isONext ? 'text-green' : 'text-orange'}>
                     {winner}
                 </span>!
             </>
