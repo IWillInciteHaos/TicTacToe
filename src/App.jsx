@@ -66,7 +66,7 @@ function App() {
       <div className="app">
         <h1>Tic <span className='text-orange'>Tac</span> Toe</h1>
         <StatusMessage winner={winner} gamingBoard={gamingBoard} />
-        <Board className="board" 
+        <Board 
           squares = {gamingBoard.squares} 
           handleSquareClick = {handleSquareClick}
           winningSquares={winningSquares}

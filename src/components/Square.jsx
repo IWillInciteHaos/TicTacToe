@@ -1,3 +1,4 @@
+
 const Square = ( { value, onClick, isWinningSquare } ) => {
     const colorClass = value === 'X' ? 'text-green' : 'text-orange';
     const winIsAWin = isWinningSquare ? 'winning' : '';

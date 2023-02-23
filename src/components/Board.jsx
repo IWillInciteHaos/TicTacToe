@@ -1,4 +1,5 @@
 import Square from "./Square";
+import '../styles.scss'
 
 const Board = ( {squares, handleSquareClick, winningSquares} ) => {
 
